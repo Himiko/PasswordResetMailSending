@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+   <package name="default" extends="struts-default">
+      <action name="register" class="com.pilot.pswrest.action.RegistrationAction" method="execute">
+      	<result name="success">success.jsp</result>
+      	<result name="error">error.jsp</result>
+      </action>
+      
+      <action name="login" class="com.pilot.pswrest.action.LoginAction" method="execute">
+      	<result name="success">success.jsp</result>
+      	<result name="error">login.jsp</result>
+      </action>
+      
+       <action name="resetPassword" class="com.pilot.pswrest.action.ResetPasswordAction" method="execute">
+		<result name="success">success.jsp</result>
+		<result name="error">error.jsp</result>
+	</action>
+   </package>
+</struts>
